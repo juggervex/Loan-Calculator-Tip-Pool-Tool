@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Load Calculator</title>
+    <script type="text/javascript" src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+    <header>
+      <h1>Loan Calculator </h1>
+    </header>
+    <section class="calc-container">
+      <form id="calc-form">
+        <label>
+          Loan Amount
+          <input type="number" id="loan-amount" placeholder="Loan Amount">
+        </label>
+        <label>
+          Term in Years
+          <input type="number" id="loan-years" placeholder="Years">
+        </label>
+        <label>
+          Yearly Interest Rate
+          <input type="number" id="loan-rate" placeholder="Interest Rate (%)">
+        </label>
+        <button type="submit" id="calc-submit">Calculate</button>
+      </form>
+      <div>
+        <h3>Monthly Payment</h3>
+        <span id="monthly-payment">$0.00</span>
+      </div>
+    </section>
+  </body>
+</html>
